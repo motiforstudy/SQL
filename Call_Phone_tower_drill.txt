@@ -1,0 +1,121 @@
+1:
+	עשיתי
+
+
+2:
+	1:
+		SELECT חברה, עיר FROM `cell_towers`
+	2:
+		SELECT `סוג אתר`, `כתובת האתר` FROM `cell_towers`
+	3:
+		SELECT DISTINCT `חברה` FROM `cell_towers`
+	4:
+		SELECT DISTINCT `עיר` FROM `cell_towers`
+	5:
+		SELECT `סוג אתר` FROM `cell_towers`
+	6:
+		SELECT `טכנולוגיית שידור` FROM `cell_towers`
+	7:
+		SELECT `היתר קרינה` FROM `cell_towers`
+	8:
+		SELECT `רשות מקומית` FROM `cell_towers`
+	9:
+		SELECT `חברה` , id FROM `cell_towers`
+	10:
+		SELECT `עיר` , `עוצמה מרבית תיאורטית בµW לסמר` FROM `cell_towers`
+	11:
+		SELECT `עיר` , `תוצאה מירבית ב% ביחס לסף הבריאות` FROM `cell_towers`
+	12:
+		SELECT * FROM `cell_towers`
+	13:
+		SELECT `סוג אתר`, id , `כתובת האתר` FROM `cell_towers`
+	14:
+		SELECT `חברה` , `תאריך היתר הפעלה` FROM `cell_towers`
+	15:
+		SELECT `חברה` , `בדיקה תקופתית אחרונה` FROM `cell_towers`
+	16:
+		SELECT `עיר` , `רשות מקומית` FROM `cell_towers`
+	17:
+		SELECT `טכנולוגיית שידור` , `סוג אתר` FROM `cell_towers`
+	18:
+		SELECT MAX(`עוצמה מרבית תיאורטית בµW לסמר` )FROM `cell_towers`
+	19:
+		SELECT `תוצאה מירבית ב% ביחס לסף הבריאות` FROM `cell_towers`
+	20:
+		SELECT * FROM `cell_towers`
+
+
+
+3:
+	1:
+		SELECT DISTINCT `סוג אתר` FROM `cell_towers`
+	2:
+		 SELECT * FROM `cell_towers` WHERE `חברה` LIKE 'פלאפון'
+	3:
+		SELECT * FROM `cell_towers` WHERE `סוג אתר` LIKE 'תורן קרקעי'
+	4:
+		SELECT * FROM `cell_towers` WHERE `היתר קרינה` LIKE 'יש היתר'
+	5:
+		SELECT * FROM `cell_towers` WHERE `היתר קרינה` LIKE 'אין היתר'
+	6:
+		SELECT * FROM `cell_towers` WHERE `טכנולוגיית שידור` LIKE '%5%'
+	7:
+		SELECT * FROM `cell_towers` WHERE `עיר` LIKE 'תל%'
+	8:
+		SELECT * FROM `cell_towers` WHERE `עוצמה מרבית תיאורטית בµW לסמר` > 50
+	9:
+		SELECT * FROM `cell_towers` WHERE `עוצמה מרבית תיאורטית בµW לסמר` < 5
+	10:
+		SELECT * FROM `cell_towers` WHERE `תוצאה מירבית ב% ביחס לסף הבריאות` > 10
+	11:
+		SELECT * FROM `cell_towers` WHERE `תוצאה מירבית ב% ביחס לסף הבריאות` = 0
+	12:
+		SELECT * FROM `cell_towers` WHERE (`חברה` LIKE '%פרטנר%') AND `עיר` LIKE 'תל אביב'
+	13:
+		SELECT * FROM `cell_towers` WHERE `סוג אתר` NOT LIKE 'תורן קרקעי'
+	14:
+		SELECT * FROM `cell_towers` WHERE `תאריך היתר הקמה` < '2020-0101'
+	15:
+		SELECT * FROM `cell_towers` WHERE `רשות מקומית` LIKE 'ירושלים'
+	16:
+		SELECT * FROM `cell_towers` WHERE `כתובת האתר` LIKE '%רחוב%'
+	17:
+		SELECT * FROM `cell_towers` WHERE (`טכנולוגיית שידור` LIKE '%3%' )AND  (`טכנולוגיית שידור` LIKE '%4%' )
+	18:
+		SELECT * FROM `cell_towers` WHERE `חברה` NOT LIKE 'סלקום'
+	19:
+		SELECT * FROM `cell_towers` WHERE `עיר` NOT LIKE 'NULL'
+	20:
+		SELECT * FROM `cell_towers` WHERE `תאור נקודה בה התקבלה תוצאה מירבית` LIKE '%קרקע%'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
