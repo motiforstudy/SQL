@@ -1,0 +1,29 @@
+1:
+	SELECT productVendor ,COUNT(*) AS total FROM `products` GROUP BY productVendor
+
+2:
+	SELECT status, COUNT(*) FROM `orders` GROUP BY status
+
+3:
+	SELECT salesRepEmployeeNumber ,AVG(creditLimit) AS total FROM `customers` GROUP BY salesRepEmployeeNumber
+
+4:
+	SELECT country ,MIN(creditLimit) AS minimum, MAX(creditLimit) AS maximum FROM `customers` GROUP BY country
+
+5:
+	SELECT officeCode, COUNT(*) FROM `employees` GROUP BY officeCode
+
+6:
+	SELECT customerNumber, AVG(amount) AS avarage FROM `payments` GROUP BY customerNumber ORDER BY avarage DESC
+
+7:
+	SELECT productVendor, AVG(buyPrice) AS avg_per_vender FROM `products` GROUP BY productVendor
+
+8:
+	SELECT salesRepEmployeeNumber, COUNT(customerNumber) AS amount_of_customers FROM `customers` GROUP BY salesRepEmployeeNumber
+
+9:
+	SELECT orderDate, COUNT(orderDate) AS count_each_day FROM `orders` GROUP BY orderDate
+
+10:
+	SELECT productScale, COUNT(productScale) FROM `products` GROUP BY productScale
