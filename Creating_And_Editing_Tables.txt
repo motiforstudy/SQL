@@ -1,0 +1,44 @@
+1:	CREATE DATABASE school;
+
+2:	CREATE TABLE backup_teachers(
+    		ID int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    		TeacherName TEXT(50) NOT NULL,
+		Email TEXT(70) NOT NULL,
+   		Phone TEXT(15)
+	);
+
+3:
+	by the import button I brought the tables
+
+4: 1:	CREATE TABLE study_hours(
+    		SELECT * FROM study_hours_extended WHERE classId BETWEEN 1 AND 5
+	);
+
+4: 2:	ALTER TABLE lecturers
+	ADD Emial VARCHAR(70) NOT NULL;
+
+5:	ALTER TABLE lecturers
+	MODIFY LecturerName VARCHAR(80) NOT NULL;
+
+6:	ALTER TABLE classes
+	DROP Status;
+
+7:	DROP TABLE backup_teachers
+
+8:	CREATE TABLE students(
+		SELECT * FROM students_temp
+	);
+
+9:	ALTER TABLE students
+	DROP personlId;
+
+10:	ALTER TABLE students
+	ADD age int CHECK(age <= 18);
+
+11:	DELETE FROM students WHERE BirthDate < '01/01/1992';
+
+12:	ALTER TABLE students
+	MODIFY BirthDate varchar(50)
+	CHECK(BETWEEN '01-01-1992' AND '31-12-2000');
+
+13:	DROP TABLE students_temp;
