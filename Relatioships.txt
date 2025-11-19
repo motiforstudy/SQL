@@ -1,0 +1,37 @@
+1:
+	a:	ClassId
+	b:	one-to-many. because each student has one and only one class he could be in, and one class can be used by a lot of students
+
+2:
+	a:	CourseId
+	b:	one-to-one. because each class can has only one course that can be study in the class in that time
+
+3:
+	a:	no
+	b:	to my opinion, his main goal is to connect extra hours to the right lecturer.
+		and it's important, because i have to had an extra table for a this specific job,
+		because not every one must have this extra hours and if add that table to the regular hours table it may cause of a lot NULL values and not useful rows.
+	c:	many-to-many. it's helped during this table connect and show the connection between the lecturer and his class he should study in.
+
+4:
+	a:	i need to find the unique column of this course. after that, i need to sort (in the table of all students) by the unique ID. and print the result
+
+	b:	step_1: go to the table of all courses, find the ID of the right course that you looking for.
+		step_2: go to the table of all student, and sort by the ID that you have to get all the right student
+		srep_3: print all the name of the student we get in step 2
+
+5:
+	a:	i need to find the unique column of this building. after that, i need to sort
+		(in the table that we can see the connection between the building and the lecturers) by the unique ID. and print the result
+
+	b:	step_1: go to the table of all classes, find the ID of the right building that you looking for.
+		step_2: go to the table of study_hours, and sort by the ID that you have to get all the right class_Id
+		srep_3: print all the name of the lecturers we get in step 2
+
+6:
+	a:	i need to find which class this student in. after that, i need to sort by the unique ID in the table of all the hours of this student.
+	 	and find what the ID of the teacher in this class. and print his name 
+
+	b:	step_1: go to the table of all students, find the classID of the right student that you looking for.
+		step_2: go to the table of all study_hours, and sort by the ID that you have to get all the right lecturersId
+		srep_3: print the name of the lecture we get in step 2
