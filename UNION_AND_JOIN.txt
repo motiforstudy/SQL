@@ -1,0 +1,44 @@
+1:
+	a:	SELECT lecturers.LecturerName FROM lecturers
+		UNION ALL
+		SELECT lecturers_new.LecturerName FROM lecturers_new;
+				get 19 lines
+
+	b:	SELECT lecturers.LecturerName FROM lecturers
+		UNION
+		SELECT lecturers_new.LecturerName FROM lecturers_new;
+				get 18 lines
+
+		the different between the two is, in query 1 we use "UNION ALL" so we get all including duplicate.
+		in query 2 we use only "UNION" without ALL so we get result without duplicate values.
+	
+
+2:
+	a:	SELECT students.FullName FROM students
+		UNION ALL
+		SELECT students_new.FullName FROM students_new;
+
+	b:	yes. because i used UNION ALL
+
+
+3:
+	a:	SELECT courses.CourseName FROM courses
+		UNION ALL
+		SELECT courses_new.CourseName FROM courses_new;
+
+
+4:	SELECT students.FullName, students.ClassId,  classes.Class
+	FROM students
+	INNER JOIN classes
+	ON students.Id = classes.Id
+
+
+5:	SELECT lecturers.LecturerName
+	FROM lecturers
+	LEFT JOIN study_hours
+	ON lecturers.Id <> (study_hours.MorningLecturerId AND study_hours.AfternoonLecturerId)
+
+
+
+
+
